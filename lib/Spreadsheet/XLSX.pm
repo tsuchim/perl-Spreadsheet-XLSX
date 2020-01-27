@@ -43,6 +43,7 @@ sub new {
 		my $mstr = $member_shared_strings->contents; 
 		$mstr =~ s/<t\/>/<t><\/t>/gsm;  # this handles an empty t tag in the xml <t/>
 		foreach my $si ($mstr =~ /<si.*?>(.*?)<\/si/gsm) {
+            $si =~ s/<rPh[^>]*>.*?<\/rPh>//gsm; # Extract main words entered with Japanese IME
 			my $str;
 			foreach my $t ($si =~ /<t.*?>(.*?)<\/t/gsm) {
 				$t = $converter -> convert ($t) if $converter;
