@@ -1,5 +1,5 @@
-Spreadsheet-XLSC version 0.01
-=============================
+Spreadsheet-XLSC version 0.13.1
+===============================
 
 Spreadsheet::XLSX - Perl extension for reading MS Excel 2007 files;
 
@@ -20,7 +20,9 @@ This module requires these other modules and libraries:
 
 COPYRIGHT AND LICENCE
 
-Copyright (C) 2008 by Dmitry Ovsyanko
+  GPL (As same as Perl)
+
+Original Copyright (C) 2008 by Dmitry Ovsyanko
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself, either Perl version 5.8.8 or,
